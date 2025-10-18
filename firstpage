@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recipe Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&amp;family=Noto+Sans+Thai:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee7c2b",
+                        "background-light": "#fcfaf8",
+                        "background-dark": "#221810",
+                        "text-light": "#1b130d",
+                        "text-dark": "#f8f7f6",
+                        "border-light": "#e7d9cf",
+                        "border-dark": "#443d37"
+                    },
+                    fontFamily: {
+                        display: ["Epilogue", "Noto Sans Thai", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Header Image -->
+<div class="@container">
+<div class="@[480px]:px-4 @[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden @[480px]:rounded-xl min-h-80" data-alt="a delicious-looking dish of Pad Thai" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDk_qqnrfiSt6EKd47NNJjcHjMlH1OHylxEpGBIm-xM7_MkFo0Kiolws_AdF5VQbvGTnivbXnixLSv5OgZVDCK4vwd_-LVL9eU6nAEgzGpha9a45e4Zup7fLSSafUXN5jynReQXNf4wDUgVGCyGGXtSyNTLbwLgJnh-6t6Cj2r7IFQtQpmEe5KEbHZvQXDodbOBu0CoYHDhXEVq04q4C4sGUtlJ39jaWTXR22ap3XwA1cBxYTVRz1hjDchp53Aj7l8NoiawexhLnEgT");'>
+<div class="flex p-4 md:p-6"><p class="text-white tracking-light text-[28px] md:text-4xl font-bold leading-tight">ผัดไทยกุ้งสด</p></div>
+</div>
+</div>
+</div>
+<!-- Body Text -->
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal pb-3 pt-1 px-4">เมนูเส้นยอดนิยมของไทยรสชาติกลมกล่อม เปรี้ยวหวานเค็มลงตัว หอมกลิ่นกระทะและถั่วคั่ว</p>
+<!-- Stats -->
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">เวลาเตรียม</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">15 นาที</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">เวลาปรุง</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">20 นาที</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-light dark:border-border-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">จำนวนที่เสิร์ฟ</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">2</p>
+</div>
+</div>
+<!-- Ingredients -->
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">ส่วนประกอบ</h2>
+<div class="px-4">
+<label class="flex gap-x-3 py-3 flex-row border-b border-border-light dark:border-border-dark">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">เส้นจันท์ หรือเส้นเล็ก 150 กรัม (แช่น้ำให้นิ่ม)</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row border-b border-border-light dark:border-border-dark">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">กุ้งสด 8-10 ตัว (แกะเปลือก ผ่าหลัง)</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row border-b border-border-light dark:border-border-dark">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">เต้าหู้แข็งหั่นเต๋า 1/2 ถ้วย</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row border-b border-border-light dark:border-border-dark">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">ไข่ไก่ 2 ฟอง</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row border-b border-border-light dark:border-border-dark">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">ถั่วงอก 1 ถ้วย</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row">
+<input class="h-5 w-5 rounded border-border-light dark:border-border-dark border-2 bg-transparent text-primary checked:bg-primary checked:border-primary checked:bg-[image:var(--checkbox-tick-svg)] focus:ring-0 focus:ring-offset-0 focus:border-border-light dark:focus:border-border-dark" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal">ใบกุยช่ายหั่นท่อน 1/2 ถ้วย</p>
+</label>
+</div>
+<!-- Instructions -->
+<h2 class="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">วิธีทำ</h2>
+<div class="px-4 space-y-4">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-white flex items-center justify-center font-bold">1</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pt-1">ตั้งกระทะใส่น้ำมันบนไฟกลาง ใส่เต้าหู้ลงไปทอดจนเหลืองกรอบ ตักขึ้นพักไว้</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-white flex items-center justify-center font-bold">2</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pt-1">ในกระทะใบเดิม ใส่กุ้งลงไปผัดจนสุก ตักขึ้นพักไว้</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-white flex items-center justify-center font-bold">3</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pt-1">เติมน้ำมันเล็กน้อย ตอกไข่ใส่ ยีให้พอแตก รอจนไข่เริ่มสุก ใส่เส้นผัดไทยที่นิ่มแล้วลงไปผัด ปรุงรสด้วยน้ำซอสผัดไทย ผัดให้เข้ากัน</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-white flex items-center justify-center font-bold">4</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pt-1">ใส่เต้าหู้ทอด กุ้งที่พักไว้ ถั่วงอก และใบกุยช่ายลงไป ผัดเร็วๆ ให้เข้ากัน ปิดไฟ</p>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-white flex items-center justify-center font-bold">5</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pt-1">ตักใส่จาน เสิร์ฟพร้อมมะนาวฝาน ถั่วลิสงคั่วป่น และพริกป่นตามชอบ</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 p-4 mt-8">
+<button class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-white bg-primary rounded-lg shadow-sm hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+<span class="material-symbols-outlined">print</span>
+                             พิมพ์สูตรอาหาร
+                         </button>
+<button class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-primary bg-primary/20 dark:text-white dark:bg-primary/30 rounded-lg hover:bg-primary/30 dark:hover:bg-primary/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+<span class="material-symbols-outlined">bookmark_border</span>
+                             บันทึกสูตร
+                         </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
